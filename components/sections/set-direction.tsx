@@ -154,11 +154,9 @@ export const SetDirection = () => {
               <Image
                 src={code}
                 alt="code"
-                className="w-[48rem] sm:w-[57rem] lg:-ml-0 md:-ml-4 rounded-xl ring-1 ring-gray-400/10 shadow-xl opacity-50"
+                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
                 width={2432}
                 height={1442}
-                loading="lazy"
-                onLoadingComplete={(img) => img.classList.remove("opacity-50")}
               />
             </div>
           </div>
