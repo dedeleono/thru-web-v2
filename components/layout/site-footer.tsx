@@ -8,7 +8,6 @@ import { ModeToggle } from "@/components/layout/mode-toggle";
 
 import logo2 from "../../public/images/thru-b.png";
 import logo from "../../public/images/thru-lemon.png";
-import { NewsletterForm } from "../forms/newsletter-form";
 import { Icons } from "../shared/icons";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
