@@ -154,7 +154,7 @@ export const SetDirection = () => {
               <Image
                 src={code}
                 alt="code"
-                className="w-[48rem] rounded-xl shadow-xl ring-1 ring-gray-400/10 opacity-50 lg:-ml-0 sm:w-[57rem] md:-ml-4"
+                className="w-[48rem] sm:w-[57rem] rounded-xl ring-1 ring-gray-400/10 shadow-xl opacity-50 lg:-ml-0 md:-ml-4"
                 width={2432}
                 height={1442}
                 loading="lazy"
