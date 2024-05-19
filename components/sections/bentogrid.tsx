@@ -360,7 +360,7 @@ export function BentoGrid() {
                       </defs>
                     </svg> */}
                     <div className="absolute size-full bg-black/30 backdrop-blur-sm dark:bg-black/70">
-                      <div className="relative w-full flex items-center justify-center h-full">
+                      <div className="relative flex size-full items-center justify-center">
                       <span className="flex rounded-full bg-slate-700/60 p-2 text-xs italic text-white">
                         coming soon
                       </span>
