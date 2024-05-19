@@ -52,7 +52,7 @@ export function MainNav({ items, children }: MainNavProps) {
     height={100}
     />
 </Link>
-<Link href="/" className="hidden  dark:md:flex dark:items-center dark:space-x-2">
+<Link href="/" className="hidden dark:md:flex dark:items-center dark:space-x-2">
     <Image
     src={logo}
     alt=""
