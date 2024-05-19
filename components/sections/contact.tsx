@@ -9,6 +9,7 @@ import { Input } from "../ui/input";
 import { Label } from "../ui/label";
 import { Textarea } from "../ui/textarea";
 import bg from "../../public/images/10.jpg";
+import Image from "next/image";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xpzgladz");
@@ -197,7 +198,7 @@ const Contact = () => {
             <div className="flex h-full flex-col items-center gap-6 md:flex-row">
               <div className="w-full min-w-0 flex-1 drop-shadow-sm">
                 <h2 className="mb-2 text-3xl font-bold leading-none text-white sm:text-4xl">
-                  Request a demo
+                  Let's Connect!
                 </h2>
                 <p className="text-base text-zinc-100 sm:text-lg">
                   Discover all the capabilities of our platform and how it can benefit you
@@ -261,14 +262,15 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <img
+          <Image
             alt="cta-background"
             loading="lazy"
             decoding="async"
             data-nimg="fill"
             className="object-position:center center;color:transparent absolute bottom-0 left-0 right-0 top-0 h-full w-full object-cover md:rotate-180"
             sizes="100vw"
-            
+            width={100}
+            height={100}
             src={bg.src}
           />
         </div>

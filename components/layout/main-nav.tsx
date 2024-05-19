@@ -42,20 +42,31 @@ export function MainNav({ items, children }: MainNavProps) {
     };
   }, [showMobileMenu]);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link
-            href="/"
+      <button
+            onClick={scrollToTop}
             className="flex items-center space-x-2 dark:hidden md:col-span-2"
           >
-            <Image src={logo2} alt="" width={100} height={100} />
-          </Link>
-          <Link
-            href="/"
+            <Image 
+            
+            src={logo2} alt="" width={100} height={100} />
+          </button>
+          <button
+            onClick={scrollToTop}
             className="hidden dark:flex dark:items-center dark:space-x-2 md:col-span-2"
           >
-            <Image src={logo} alt="" width={100} height={100} />
-          </Link>
+            <Image 
+            
+            src={logo} alt="" width={100} height={100} />
+          </button>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex">
           {items?.map((item, index) => (

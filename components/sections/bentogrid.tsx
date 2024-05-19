@@ -2,6 +2,10 @@ import Image from "next/image";
 
 import marketplace from "../../public/images/marketplace.png";
 
+import qr from '../../public/images/qr.svg';
+import pos from '../../public/images/pos.svg';
+import m from '../../public/images/manage.svg';
+
 export function BentoGrid() {
   return (
     <section>
@@ -142,48 +146,55 @@ export function BentoGrid() {
                   </div>
                   <div className="relative mt-6 before:absolute before:inset-0 before:mx-auto before:w-px before:bg-[#01DC94]/80 dark:before:bg-[#01DC94]/50 sm:-my-8 sm:-mr-8">
                     <div className="relative flex h-full flex-col justify-center space-y-6 py-6">
+
                       <div className="relative flex w-[calc(50%+0.875rem)] items-center justify-end gap-2">
-                        <span className="block h-fit rounded-md border bg-muted/50 px-2 py-1 text-xs">
-                          Event 1
+                        <span className="block h-fit rounded-md border bg-muted/50 px-2 py-1 text-[9px]">
+                          Manage your events
                         </span>
                         <div className="size-7 ring-4 ring-background">
                           <Image
                             width={100}
                             height={100}
-                            className="size-full rounded-full border"
-                            src="https://randomuser.me/api/portraits/men/4.jpg"
-                            alt="fake-avatar"
+                            className="size-full rounded-full border bg-white text-black dark:invert"
+                            src={m}
+                            alt="m"
                           />
                         </div>
                       </div>
+
                       <div className="relative ml-[calc(50%-1rem)] flex items-center gap-2">
                         <div className="size-8 ring-4 ring-background">
                           <Image
                             width={100}
                             height={100}
-                            className="size-full rounded-full border"
-                            src="https://randomuser.me/api/portraits/men/6.jpg"
-                            alt="fake-avatar"
+                            className="size-full rounded-full border bg-white text-black dark:invert"
+                            src={qr}
+                            alt="m"
                           />
                         </div>
-                        <span className="block h-fit rounded-md border bg-muted/50 px-2 py-1 text-xs">
-                          Event 2
+                        <span className="block h-fit rounded-md border bg-muted/50 px-2 py-1 text-[9px]">
+                          tickets scanner
                         </span>
                       </div>
+
                       <div className="relative flex w-[calc(50%+0.875rem)] items-center justify-end gap-2">
-                        <span className="block h-fit rounded-md border bg-muted/50 px-2 py-1 text-xs">
-                          Event 3
+                        <span className="block h-fit rounded-md border bg-muted/50 px-2 py-1 text-[9px]">
+                          Payments Integration
                         </span>
                         <div className="size-7 ring-4 ring-background">
                           <Image
                             width={100}
                             height={100}
-                            className="size-full rounded-full border"
-                            src="https://randomuser.me/api/portraits/men/2.jpg"
-                            alt="fake-avatar"
+                            className="size-full rounded-full border bg-white text-black dark:invert"
+                            src={pos}
+                            alt="pos"
                           />
                         </div>
                       </div>
+
+                      
+
+                      
                     </div>
                   </div>
                 </div>
@@ -371,6 +382,8 @@ export function BentoGrid() {
                       alt="marketplace"
                       layout="responsive"
                       className="size-full object-cover"
+                      width={100}
+                      height={100}
                     />
                   </div>
                 </div>

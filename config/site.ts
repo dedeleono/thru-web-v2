@@ -8,7 +8,7 @@ export const siteConfig: SiteConfig = {
   description:
     "Providing an impenetrable layer of protection and unlimited possibilities for fans and event organizers.",
   url: site_url,
-  ogImage: `${site_url}/og.jpg`,
+  ogImage: `${site_url}/og.png`,
   links: {
     twitter: "https://x.com/thruticket",
     github: "https://github.com/Thru-App",

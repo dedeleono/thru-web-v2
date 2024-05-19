@@ -6,8 +6,8 @@ import { footerLinks, siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/layout/mode-toggle";
 
-import logo2 from "../../public/images/thru-b.png";
-import logo from "../../public/images/thru-lemon.png";
+import logo2 from "../../public/images/green_variation.png";
+import logo from "../../public/images/lemon_variacion.png";
 import { Icons } from "../shared/icons";
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
@@ -36,15 +36,15 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
         <div className="flex flex-col  items-end md:col-span-2">
           <Link
             href="/"
-            className="flex items-center space-x-2 dark:hidden md:col-span-2"
+            className="flex items-center space-x-2 dark:hidden "
           >
-            <Image src={logo2} alt="" width={300} height={300} />
+            <Image src={logo2} alt="" width={200} height={200} />
           </Link>
           <Link
             href="/"
-            className="hidden dark:flex dark:items-center dark:space-x-2 md:col-span-2"
+            className="hidden dark:flex dark:items-center dark:space-x-2 "
           >
-            <Image src={logo} alt="" width={300} height={300} />
+            <Image src={logo} alt="" width={200} height={200} />
           </Link>
         </div>
       </div>

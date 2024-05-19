@@ -35,7 +35,7 @@ export async function HeroLanding() {
           )}
           target="_blank"
         >
-          <span className="mr-3">🎉</span> Find Us!{" "}
+          <span className="mr-3">🎉</span> Find us on{" "}
           <Icons.twitter className="ml-2 size-3.5" />
         </Link>
 
@@ -69,7 +69,8 @@ export async function HeroLanding() {
             <Icons.arrowRight className="size-4" />
           </Link>
           <Link
-            href="#pricing"
+            href="https://65m96trlsh0.typeform.com/to/ZsZ6XkxD"
+            target="_blank"
             rel="noreferrer"
             className={cn(
               buttonVariants({
