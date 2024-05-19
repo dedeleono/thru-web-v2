@@ -355,8 +355,8 @@ export function BentoGrid() {
                         </linearGradient>
                       </defs>
                     </svg> */}
-                    <div className="size-full absolute bg-black/30 backdrop-blur-sm dark:bg-black/70">
-                      <span className="block absolute rounded-full  text-white italic text-xs bg-slate-700/60 p-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">coming soon</span>
+                    <div className="absolute size-full bg-black/30 backdrop-blur-sm dark:bg-black/70">
+                    <span className="absolute block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-slate-700/60 p-1 text-xs italic text-white">coming soon</span>
                     </div>
                     <Image
                       src={marketplace}

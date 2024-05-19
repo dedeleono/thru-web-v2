@@ -44,7 +44,7 @@ export function MainNav({ items, children }: MainNavProps) {
 
   return (
     <div className="flex gap-6 md:gap-10">
-      <Link href="/" className=" items-center space-x-2 hidden md:flex dark:hidden">
+      <Link href="/" className="hidden md:flex items-center space-x-2 dark:hidden">
     <Image
     src={logo2}
     alt=""
@@ -52,7 +52,7 @@ export function MainNav({ items, children }: MainNavProps) {
     height={100}
     />
 </Link>
-<Link href="/" className=" hidden dark:items-center dark:space-x-2 dark:md:flex dark:flex">
+<Link href="/" className="hidden  dark:md:flex dark:items-center dark:space-x-2">
     <Image
     src={logo}
     alt=""
