@@ -58,12 +58,12 @@ export default function PricingPage() {
           </Link>
         </div>
       </div>
-      <div className="mx-auto flex w-full max-w-[58rem] flex-col gap-4">
+      {/* <div className="mx-auto flex w-full max-w-[58rem] flex-col gap-4">
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:leading-7">
           Our free trial{" "}
-          <strong>includes 100 tickets for free*</strong>
+          <strong>may include tickets for free*</strong>
         </p>
-      </div>
+      </div> */}
     </section>
   )
 }
