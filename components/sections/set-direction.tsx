@@ -10,7 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { Separator } from "@/components/ui/separator"
 
-import code from "../../public/images/website-example.svg"
+import code from "../../public/images/code.png"
 import dash from "../../public/images/dash.png"
 
 
