@@ -36,7 +36,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           </div>
         ))}
         <div className="flex flex-col  items-end md:col-span-2">
-        <Link href="/" className="flex items-center space-x-2 md:col-span-2 dark:hidden">
+        <Link href="/" className="flex items-center space-x-2 dark:hidden md:col-span-2">
         <Image
         src={logo2}
         alt=""
@@ -44,7 +44,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
         height={300}
         />
         </Link>
-        <Link href="/" className="hidden md:col-span-2 dark:flex dark:items-center dark:space-x-2">
+        <Link href="/" className="hidden dark:flex dark:items-center dark:space-x-2 md:col-span-2">
         <Image
         src={logo}
         alt=""

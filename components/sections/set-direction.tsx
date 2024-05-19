@@ -87,7 +87,7 @@ export const SetDirection = () => {
                   <h2 className="text-gradient_indigo-purple text-base font-semibold leading-7">
                     Provide Better Experiences
                   </h2>
-                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-300">
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-300 sm:text-4xl ">
                     Designed to cover all your needs
                   </p>
                   <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
@@ -129,13 +129,13 @@ export const SetDirection = () => {
                   <h2 className="text-gradient_indigo-purple text-base font-semibold leading-7 ">
                     Deploy faster
                   </h2>
-                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-300">
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-300 sm:text-4xl">
                     A powerful workflow
                   </p>
                   <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
                   An API that integrates seamlessly with your existing system.
                   </p>
-                  <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none dark:text-gray-300">
+                  <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none ">
                     {features2.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
                         <dt className="inline font-semibold text-gray-900 dark:text-[#E8FFC9]">
@@ -154,7 +154,7 @@ export const SetDirection = () => {
               <Image
                 src={code}
                 alt="code"
-                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 opacity-50 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 opacity-50 lg:-ml-0 sm:w-[57rem] md:-ml-4"
                 width={2432}
                 height={1442}
                 loading="lazy"
