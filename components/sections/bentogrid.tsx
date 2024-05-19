@@ -1,5 +1,6 @@
 import Image from "next/image";
-import marketplace from '../../public/images/marketplace.png'
+
+import marketplace from "../../public/images/marketplace.png";
 
 export function BentoGrid() {
   return (
@@ -69,7 +70,8 @@ export function BentoGrid() {
                       Secure by default
                     </h2>
                     <p className="text-muted-foreground">
-                    Tickets become tradable digital assets, impossible to duplicate or steal.
+                      Tickets become tradable digital assets, impossible to
+                      duplicate or steal.
                     </p>
                   </div>
                 </div>
@@ -132,7 +134,9 @@ export function BentoGrid() {
                         Stream-line your operations
                       </h2>
                       <p className="text-muted-foreground">
-                      Say goodbye to scattered information and embrace the convenience of having complete control over your ticketing operations.
+                        Say goodbye to scattered information and embrace the
+                        convenience of having complete control over your
+                        ticketing operations.
                       </p>
                     </div>
                   </div>
@@ -298,14 +302,14 @@ export function BentoGrid() {
                           d="M5.5 7c2 0 6.5-3 6.5-3s4.5 3 6.5 3v4.5C18.5 18 12 20 12 20s-6.5-2-6.5-8.5z"
                         />
                       </svg>
-                      
                     </div>
                     <div className="space-y-2">
                       <h2 className="text-lg font-medium text-foreground">
                         Marketplace
                       </h2>
                       <p className="text-muted-foreground">
-                        Allow your clients to trade their tickets in a secure and easy way, using your own marketplace.
+                        Allow your clients to trade their tickets in a secure
+                        and easy way, using your own marketplace.
                       </p>
                     </div>
                   </div>
@@ -356,20 +360,21 @@ export function BentoGrid() {
                       </defs>
                     </svg> */}
                     <div className="absolute size-full bg-black/30 backdrop-blur-sm dark:bg-black/70">
-                    <span className="absolute block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-1 text-xs text-white italic bg-slate-700/60">coming soon</span>
+                      <div className="relative w-full flex items-center justify-center h-full">
+                      <span className="flex rounded-full bg-slate-700/60 p-2 text-xs italic text-white">
+                        coming soon
+                      </span>
+                      </div>
                     </div>
                     <Image
                       src={marketplace}
                       alt="marketplace"
                       layout="responsive"
-                      className="size-full object-cover"                    
-                      />
+                      className="size-full object-cover"
+                    />
                   </div>
                 </div>
               </div>
-
-              
-
             </div>
           </div>
         </div>

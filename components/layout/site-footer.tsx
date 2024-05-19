@@ -1,16 +1,15 @@
 import * as React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import Image from "next/image"
 
 import { footerLinks, siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ModeToggle } from "@/components/layout/mode-toggle";
 
+import logo2 from "../../public/images/thru-b.png";
+import logo from "../../public/images/thru-lemon.png";
 import { NewsletterForm } from "../forms/newsletter-form";
 import { Icons } from "../shared/icons";
-
-import logo from '../../public/images/thru-lemon.png'
-import logo2 from '../../public/images/thru-b.png'
 
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
@@ -36,22 +35,18 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
           </div>
         ))}
         <div className="flex flex-col  items-end md:col-span-2">
-        <Link href="/" className="flex items-center space-x-2 dark:hidden md:col-span-2">
-        <Image
-        src={logo2}
-        alt=""
-        width={300}
-        height={300}
-        />
-        </Link>
-        <Link href="/" className="hidden dark:flex dark:items-center dark:space-x-2 md:col-span-2">
-        <Image
-        src={logo}
-        alt=""
-        width={300}
-        height={300}
-        />
-        </Link>
+          <Link
+            href="/"
+            className="flex items-center space-x-2 dark:hidden md:col-span-2"
+          >
+            <Image src={logo2} alt="" width={300} height={300} />
+          </Link>
+          <Link
+            href="/"
+            className="hidden dark:flex dark:items-center dark:space-x-2 md:col-span-2"
+          >
+            <Image src={logo} alt="" width={300} height={300} />
+          </Link>
         </div>
       </div>
 
@@ -61,7 +56,6 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             Copyright &copy; 2024. All rights reserved.
           </span> */}
           <p className="text-left text-sm text-muted-foreground">
-            
             Copyright Ⓒ 2024 Thru. All Rights Reserved.
           </p>
 
