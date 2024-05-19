@@ -136,7 +136,7 @@ export function BentoGrid() {
                       </p>
                     </div>
                   </div>
-                  <div className="relative mt-6 before:absolute before:inset-0 before:mx-auto before:w-px dark:before:bg-[#01DC94]/50 before:bg-[#01DC94]/80 sm:-my-8 sm:-mr-8">
+                  <div className="relative mt-6 before:absolute before:inset-0 before:mx-auto before:w-px before:bg-[#01DC94]/80 dark:before:bg-[#01DC94]/50 sm:-my-8 sm:-mr-8">
                     <div className="relative flex h-full flex-col justify-center space-y-6 py-6">
                       <div className="relative flex w-[calc(50%+0.875rem)] items-center justify-end gap-2">
                         <span className="block h-fit rounded-md border bg-muted/50 px-2 py-1 text-xs">
@@ -355,14 +355,14 @@ export function BentoGrid() {
                         </linearGradient>
                       </defs>
                     </svg> */}
-                    <div className="dark:bg-black/70 bg-black/30 backdrop-blur-sm absolute w-full h-full">
-                      <span className="block rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white italic text-xs bg-slate-700/60 p-1">coming soon</span>
+                    <div className=" bg-black/30 backdrop-blur-sm absolute w-full h-full dark:bg-black/70">
+                      <span className="text-white italic text-xs bg-slate-700/60 p-1 block rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">coming soon</span>
                     </div>
                     <Image
                       src={marketplace}
                       alt="marketplace"
                       layout="responsive"
-                      className="w-full h-full object-cover"                    
+                      className="size-full object-cover"                    
                       />
                   </div>
                 </div>

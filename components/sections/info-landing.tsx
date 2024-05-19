@@ -27,7 +27,7 @@ export function InfoLanding({ data, reverse = false }: InfoLandingProps) {
               return (
                 <div className="relative pl-8" key={index}>
                   <dt className="font-semibold">
-                    <Icon className="absolute left-0 top-1 size-5 dark:stroke-[#E8FFC9] stroke-[#0B4650]" />
+                    <Icon className="absolute left-0 top-1 size-5 stroke-[#0B4650] dark:stroke-[#E8FFC9]" />
                     <span>{item.title}</span>
                   </dt>
                   <dd className="text-sm text-muted-foreground">

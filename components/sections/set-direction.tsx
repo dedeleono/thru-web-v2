@@ -66,7 +66,7 @@ export const SetDirection = () => {
   return (
     <>
     <Separator />
-    <div id='products' className="text-center pt-24">
+    <div id='products' className="pt-24 text-center">
       <Tabs defaultValue="SaaS" className="w-auto">
       <div className="mx-auto flex w-full flex-col gap-4 pb-12">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
@@ -83,11 +83,11 @@ export const SetDirection = () => {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 md:mx-0 md:max-w-none md:grid-cols-2">
               <div className="md:pr-8 md:pt-4">
-                <div className="lg:max-w-lg px-3">
-                  <h2 className="text-base font-semibold leading-7 text-gradient_indigo-purple ">
+                <div className="px-3 lg:max-w-lg">
+                  <h2 className="text-gradient_indigo-purple text-base font-semibold leading-7">
                     Provide Better Experiences
                   </h2>
-                  <p className="mt-2 text-3xl font-bold tracking-tight dark:text-gray-300 text-gray-900 sm:text-4xl">
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-300">
                     Designed to cover all your needs
                   </p>
                   <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
@@ -96,9 +96,9 @@ export const SetDirection = () => {
                   <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
                     {features.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold dark:text-[#E8FFC9] text-gray-900">
+                        <dt className="inline font-semibold text-gray-900 dark:text-[#E8FFC9]">
                           <feature.icon
-                            className="absolute left-1 top-1 h-5 w-5 dark:text-white text-black"
+                            className="absolute left-1 top-1 size-5 text-black dark:text-white"
                             aria-hidden="true"
                           />
                           {feature.name}
@@ -125,22 +125,22 @@ export const SetDirection = () => {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 md:mx-0 md:max-w-none md:grid-cols-2">
               <div className="md:pr-8 md:pt-4">
-                <div className="lg:max-w-lg px-3">
-                  <h2 className="text-base font-semibold leading-7 text-gradient_indigo-purple ">
+                <div className="px-3 lg:max-w-lg">
+                  <h2 className="text-gradient_indigo-purple text-base font-semibold leading-7 ">
                     Deploy faster
                   </h2>
-                  <p className="mt-2 text-3xl font-bold tracking-tight dark:text-gray-300 text-gray-900 sm:text-4xl">
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-gray-300">
                     A powerful workflow
                   </p>
                   <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
                   An API that integrates seamlessly with your existing system.
                   </p>
-                  <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 dark:text-gray-300 lg:max-w-none">
+                  <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none dark:text-gray-300">
                     {features2.map((feature) => (
                       <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold dark:text-[#E8FFC9] text-gray-900">
+                        <dt className="inline font-semibold text-gray-900 dark:text-[#E8FFC9]">
                           <feature.icon
-                            className="absolute left-1 top-1 h-5 w-5 dark:text-white text-black"
+                            className="absolute left-1 top-1 size-5 text-black dark:text-white"
                             aria-hidden="true"
                           />
                           {feature.name}
@@ -154,7 +154,7 @@ export const SetDirection = () => {
               <Image
                 src={code}
                 alt="code"
-                className="opacity-50 w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 opacity-50 sm:w-[57rem] md:-ml-4 lg:-ml-0"
                 width={2432}
                 height={1442}
                 loading="lazy"
