@@ -4,7 +4,7 @@ import { env } from "@/env.mjs";
 const site_url = env.NEXT_PUBLIC_APP_URL;
 
 export const siteConfig: SiteConfig = {
-  name: "Thru Ticket",
+  name: "Ticket Pro",
   description:
     "Providing an impenetrable layer of protection and unlimited possibilities for fans and event organizers.",
   url: site_url,
