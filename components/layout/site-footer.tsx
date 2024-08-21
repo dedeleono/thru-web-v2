@@ -10,6 +10,9 @@ import logo2 from "../../public/images/green_variation.png";
 import logo from "../../public/images/lemon_variacion.png";
 import { Icons } from "../shared/icons";
 
+import iconPurple from "../../public/images/LOGO_THRU_degrade.png";
+import iconGreen from "../../public/images/LOGO_THRU_icon_degrade-17.png";
+
 export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
   return (
     <footer className={cn("border-t", className)}>
@@ -38,13 +41,13 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             href="/"
             className="flex items-center space-x-2 dark:hidden "
           >
-            <Image src={logo2} alt="" width={200} height={200} />
+            <Image src={iconPurple} alt="" width={200} height={200} />
           </Link>
           <Link
             href="/"
             className="hidden dark:flex dark:items-center dark:space-x-2 "
           >
-            <Image src={logo} alt="" width={200} height={200} />
+            <Image src={iconGreen} alt="" width={200} height={200} />
           </Link>
         </div>
       </div>

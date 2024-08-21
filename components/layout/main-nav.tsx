@@ -12,8 +12,8 @@ import { cn } from "@/lib/utils";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Icons } from "@/components/shared/icons";
 
-import logo from "../../public/images/logo.svg";
-import logo2 from "../../public/images/thru-b.png";
+import iconPurple from "../../public/images/pro-purple.svg";
+import iconGreen from "../../public/images/pro-lemon.svg";
 
 interface MainNavProps {
   items?: MainNavItem[];
@@ -52,21 +52,29 @@ export function MainNav({ items, children }: MainNavProps) {
   return (
     <div className="flex gap-6 md:gap-10">
       <button
-            onClick={scrollToTop}
-            className="flex items-center space-x-2 dark:hidden md:col-span-2"
-          >
-            <Image 
-            
-            src={logo2} alt="" width={100} height={100} />
-          </button>
-          <button
-            onClick={scrollToTop}
-            className="hidden dark:flex dark:items-center dark:space-x-2 md:col-span-2"
-          >
-            <Image 
-            
-            src={logo} alt="" width={100} height={100} />
-          </button>
+        onClick={scrollToTop}
+        className="flex items-center space-x-2 dark:hidden md:col-span-2"
+      >
+        <Image
+          src={iconPurple}
+          alt=""
+          width={100}
+          height={100}
+          className="h-32 w-32"
+        />
+      </button>
+      <button
+        onClick={scrollToTop}
+        className="hidden dark:flex dark:items-center dark:space-x-2 md:col-span-2"
+      >
+        <Image
+          src={iconGreen}
+          alt=""
+          width={100}
+          height={100}
+          className="h-32 w-32"
+        />
+      </button>
       {items?.length ? (
         <nav className="hidden gap-6 md:flex">
           {items?.map((item, index) => (
