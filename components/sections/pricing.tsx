@@ -22,7 +22,7 @@ export default function PricingPage() {
       <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
         <div className="grid gap-6">
           <h3 className="text-xl font-bold sm:text-2xl">
-            What&apos;s included in the PRO plan
+            What&apos;s included with our platform
           </h3>
           <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
             <li className="flex items-center">
@@ -48,9 +48,9 @@ export default function PricingPage() {
         </div>
         <div className="flex flex-col gap-4 text-center">
           <div>
-            <h4 className="text-7xl font-bold">$1.75</h4>
+            <h4 className="text-7xl font-bold">$</h4>
             <p className="text-sm font-medium text-muted-foreground">
-              per emitted ticket
+              Each ticket emitted will incur a nominal fee.*
             </p>
           </div>
           <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
