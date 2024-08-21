@@ -13,7 +13,7 @@ import { MobileNav } from "@/components/layout/mobile-nav";
 import { Icons } from "@/components/shared/icons";
 
 import iconPurple from "../../public/images/pro-purple.svg";
-import iconGreen from "../../public/images/pro-lemon.svg";
+import iconGreen from "../../public/images/proo-lemon.svg";
 
 interface MainNavProps {
   items?: MainNavItem[];
