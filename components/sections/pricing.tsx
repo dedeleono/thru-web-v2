@@ -50,7 +50,7 @@ export default function PricingPage() {
           <div>
             <h4 className="text-7xl font-bold">$</h4>
             <p className="text-sm font-medium text-muted-foreground">
-              Each ticket emitted will incur a nominal fee.*
+              Each ticket emitted will incur a nominal fee*
             </p>
           </div>
           <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
