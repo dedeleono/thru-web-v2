@@ -35,12 +35,12 @@ export async function HeroLanding() {
           )}
           target="_blank"
         >
-          <span className="mr-3">🎉</span> Find us on{" "}
-          <Icons.twitter className="ml-2 size-3.5" />
+          {/* <span className="mr-3">🎉</span> */}
+          Find us on <Icons.twitter className="ml-2 size-3.5" />
         </Link>
 
         <h1 className="text-balance font-urban text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-[66px]">
-        Deliver Unforgettable{" "}
+          Deliver Unforgettable{" "}
           <span className="text-gradient_indigo-purple font-extrabold">
             Experiences
           </span>
@@ -81,10 +81,8 @@ export async function HeroLanding() {
               "px-5",
             )}
           >
-            
             <p>
-              <span className="hidden sm:inline-block">Request</span>{" "}Demo
-              
+              <span className="hidden sm:inline-block">Request</span> Demo
             </p>
           </Link>
         </div>

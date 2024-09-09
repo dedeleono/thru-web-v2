@@ -55,7 +55,7 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             Copyright &copy; 2024. All rights reserved.
           </span> */}
           <p className="text-left text-sm text-muted-foreground">
-            Copyright Ⓒ 2024 Thru. All Rights Reserved.
+            Copyright Ⓒ 2024 THRU. All Rights Reserved.
           </p>
 
           <div className="flex items-center gap-3">
