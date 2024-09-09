@@ -10,7 +10,7 @@ const Contact = () => {
   return (
 
     <section className=" py-8 text-zinc-900">
-      <div className="mx-auto max-w-screen-xl px-6 lg:px-16">
+      <div className="mx-auto max-w-screen-xl px-7">
         <div className="relative h-96 w-full overflow-hidden rounded-xl md:h-72 ">
           <div className="absolute inset-0 z-10 p-6 md:px-12">
             <div className="flex h-full flex-col items-center gap-6 md:flex-row">
