@@ -12,8 +12,8 @@ import { cn } from "@/lib/utils";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Icons } from "@/components/shared/icons";
 
-import iconPurple from "../../public/images/pro-purple.svg";
-import iconGreen from "../../public/images/proo-lemon.svg";
+import iconPurple from "../../public/images/thru-b.png";
+import iconGreen from "../../public/images/thru-lemon.png";
 
 interface MainNavProps {
   items?: MainNavItem[];
@@ -60,7 +60,7 @@ export function MainNav({ items, children }: MainNavProps) {
           alt=""
           width={100}
           height={100}
-          className="h-32 w-32"
+          
         />
       </button>
       <button
@@ -72,7 +72,7 @@ export function MainNav({ items, children }: MainNavProps) {
           alt=""
           width={100}
           height={100}
-          className="h-32 w-32"
+          
         />
       </button>
       {items?.length ? (
