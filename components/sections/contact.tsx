@@ -19,7 +19,7 @@ const Contact = () => {
                   Let's Connect!
                 </h2>
                 <p className="text-base text-zinc-100 sm:text-lg">
-                  Discover all the capabilities of our platform and how it can benefit you
+                  Discover all the capabilities our platform offers
                 </p>
               </div>
               <div className="flex w-full min-w-0 flex-1 flex-shrink-0 rounded-lg bg-white/60 p-4">
