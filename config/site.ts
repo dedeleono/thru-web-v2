@@ -26,15 +26,15 @@ export const footerLinks: SidebarNavItem[] = [
       { title: "Jobs", href: "#" },
     ],
   },
-  {
-    title: "Product",
-    items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
-    ],
-  },
+  // {
+  //   title: "Product",
+  //   items: [
+  //     { title: "Security", href: "#" },
+  //     { title: "Customization", href: "#" },
+  //     { title: "Customers", href: "#" },
+  //     { title: "Changelog", href: "#" },
+  //   ],
+  // },
   {
     title: "Docs",
     items: [
