@@ -2,25 +2,24 @@ import { InfoLdg } from "types";
 
 export const infos: InfoLdg[] = [
   {
-    title: "You do the business, we'll handle the tickets.",
+    title: "You do the business, we do the rest.",
     description:
-      "Deliver memorable experiences - leave the ticketing tasks to us while you grow your business hassle free.",
+      "From festivals to corporate campuses, our platform ensures secure and seamless access management while you focus on delivering memorable experiences.",
     image: "/images/work-from-home.jpeg",
     list: [
       {
-        title: "Collaborative",
-        description: "Work together with your team members in real-time.",
+        title: "Versatile",
+        description: "Support any type of access-controlled environment.",
         icon: "laptop",
       },
       {
-        title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
+        title: "Secure",
+        description: "Blockchain-backed credentials prevent fraud and duplication.",
         icon: "settings",
       },
       {
-        title: "Scalable",
-        description:
-          "Our platform offers the scalability needed to adapt to your needs.",
+        title: "Insightful",
+        description: "Track user behavior and preferences across all touchpoints.",
         icon: "search",
       },
     ],

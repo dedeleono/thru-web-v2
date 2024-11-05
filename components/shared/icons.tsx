@@ -11,6 +11,7 @@ import {
   FileText,
   HelpCircle,
   Image,
+  Languages,
   Laptop,
   Loader2,
   LucideIcon,
@@ -105,4 +106,5 @@ export const Icons = {
   ),
   user: User,
   warning: AlertTriangle,
+  languages: Languages,
 };

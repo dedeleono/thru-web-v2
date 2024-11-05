@@ -10,7 +10,10 @@ export const metadata = {
 
 export default function PricingPage() {
   return (
-    <section id="pricing" className="container flex flex-col  gap-6 py-8 md:max-w-[75rem] md:py-12 lg:py-24">
+    <section
+      id="pricing"
+      className="container flex flex-col  gap-6 py-8 md:max-w-[75rem] md:py-12 lg:py-24"
+    >
       <div className="mx-auto flex w-full flex-col gap-4 ">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Simple, transparent pricing
@@ -26,23 +29,24 @@ export default function PricingPage() {
           </h3>
           <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Online payments integration and invoicing*
+              <Icons.check className="mr-2 h-4 w-4" /> Digital ID creation and
+              management
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Up to 5 Staff Users
-            </li>
-
-            <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Custom domain
+              <Icons.check className="mr-2 h-4 w-4" /> Up to 5 access points
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Dashboard Analytics
+              <Icons.check className="mr-2 h-4 w-4" /> Real-time access tracking
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Custom Forms (Gather and save important data)
+              <Icons.check className="mr-2 h-4 w-4" /> Basic analytics dashboard
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Premium Support
+              <Icons.check className="mr-2 h-4 w-4" /> Custom access rules
+              configuration
+            </li>
+            <li className="flex items-center">
+              <Icons.check className="mr-2 h-4 w-4" /> Standard support
             </li>
           </ul>
         </div>
@@ -65,5 +69,5 @@ export default function PricingPage() {
         </p>
       </div> */}
     </section>
-  )
+  );
 }

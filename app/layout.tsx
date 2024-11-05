@@ -21,13 +21,14 @@ export const metadata = {
   description: siteConfig.description,
   keywords: [
     "Thru",
-    "Thru Ticket",
-    "Online Ticketing",
-    "Marketplace",
-    "NFTs",
+    "Access Management",
+    "Digital ID",
+    "Access Control",
+    "Event Management",
+    "Venue Access",
     "Blockchain",
-    "Events",
-    "Payments",
+    "Identity Verification",
+    "Access Analytics",
   ],
   authors: [
     {
@@ -43,7 +44,7 @@ export const metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     siteName: siteConfig.name,
-    images: [siteConfig.ogImage]
+    images: [siteConfig.ogImage],
   },
   twitter: {
     card: "summary_large_image",
@@ -58,7 +59,7 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-}
+};
 
 export default function RootLayout({ children }: RootLayoutProps) {
 

@@ -13,6 +13,7 @@ import { Icons } from "../shared/icons";
 import { MainNav } from "./main-nav";
 import { UserAccountNav } from "./user-account-nav";
 import { Badge } from "@/components/ui/badge"
+import { useRouter } from "next/navigation";
 
 interface NavBarProps {
   user: Pick<User, "name" | "image" | "email"> | undefined;
@@ -30,7 +31,7 @@ export function NavBar({
   scroll = false,
 }: NavBarProps) {
   const scrolled = useScroll(50);
-  const signInModal = useSigninModal();
+  const router = useRouter();
 
   return (
     <header
@@ -59,23 +60,19 @@ export function NavBar({
             </Link>
           ) : null} */}
 
-          {user ? (
-            <UserAccountNav user={user} />
-          ) : (
+          
             <Button
-              className="gap-2 px-4 opacity-70"
+              className="gap-2 px-4"
               disabled={true}
               variant="default"
               size="sm"
               rounded="full"
-              onClick={signInModal.onOpen}
+              onClick={()=>router.push("https://dashboard.thru-ticket.com")}
             >
-              <Badge variant="secondary">soon</Badge>
-
               <span>Sign Up</span>
               <Icons.arrowRight className="size-4" />
             </Button>
-          )}
+          
         </div>
       </div>
     </header>

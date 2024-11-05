@@ -7,6 +7,8 @@ import { buttonVariants } from "@/components/ui/button";
 import { Icons } from "@/components/shared/icons";
 
 export async function HeroLanding() {
+
+
   const { stargazers_count: stars } = await fetch(
     "https://api.github.com/repos/mickasmt/next-saas-stripe-starter",
     {
@@ -28,7 +30,7 @@ export async function HeroLanding() {
       <div className="container flex max-w-5xl flex-col items-center gap-5 text-center">
         {/* Want animations? Check here: https://github.com/mickasmt/next-saas-stripe-starter/blob/76eb9f2b70b29c7a734ff0e5b047796ed2dac28d/app/(marketing)/page.tsx */}
         <Link
-          href="https://twitter.com/thruticket"
+          href="https://twitter.com/thru_tech"
           className={cn(
             buttonVariants({ variant: "outline", size: "sm", rounded: "full" }),
             "px-4",
@@ -50,7 +52,8 @@ export async function HeroLanding() {
           className="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8"
           style={{ animationDelay: "0.35s", animationFillMode: "forwards" }}
         >
-          Designed to provide a smooth and engaging ticketing journey
+          From events to attractions, secure digital identification for seamless
+          access management
         </p>
 
         <div

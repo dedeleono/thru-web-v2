@@ -4,11 +4,12 @@ import { env } from "@/env.mjs"
 export const pricingData: SubscriptionPlan[] = [
   {
     title: 'Starter',
-    description: 'For Beginners',
+    description: 'For Small Venues',
     benefits: [
-      'Up to 100 monthly posts',
-      'Basic analytics and reporting',
-      'Access to standard templates',
+      'Up to 1,000 monthly verifications',
+      'Basic access analytics',
+      'Standard identification templates',
+      'Email support',
     ],
     limitations: [
       'No priority access to new features.',

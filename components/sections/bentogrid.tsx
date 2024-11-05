@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import marketplace from "../../public/images/marketplace.png";
+import whiteLabel from "../../public/images/storefront.png";
 
 import qr from '../../public/images/qr.svg';
 import pos from '../../public/images/pos.svg';
@@ -74,7 +75,7 @@ export function BentoGrid() {
                       Secure by default
                     </h2>
                     <p className="text-muted-foreground">
-                      Tickets become tradable digital assets, impossible to
+                      Assets become immutable digital assets, impossible to
                       duplicate or steal.
                     </p>
                   </div>
@@ -316,11 +317,10 @@ export function BentoGrid() {
                     </div>
                     <div className="space-y-2">
                       <h2 className="text-lg font-medium text-foreground">
-                        Marketplace
+                        White Label
                       </h2>
                       <p className="text-muted-foreground">
-                        Allow your clients to trade their tickets in a secure
-                        and easy way, using your own marketplace.
+                        Use our platform to create your own branded platform and manage your own assets.
                       </p>
                     </div>
                   </div>
@@ -370,15 +370,13 @@ export function BentoGrid() {
                         </linearGradient>
                       </defs>
                     </svg> */}
-                    <div className="absolute size-full bg-black/30 backdrop-blur-sm dark:bg-black/70">
+                    <div className="absolute size-full bg-black/30 backdrop-blur-[3px] dark:bg-black/70">
                       <div className="relative flex size-full items-center justify-center">
-                      <span className="flex rounded-full bg-slate-700/60 p-2 text-xs italic text-white">
-                        coming soon
-                      </span>
+                      
                       </div>
                     </div>
                     <Image
-                      src={marketplace}
+                      src={whiteLabel}
                       alt="marketplace"
                       layout="responsive"
                       className="size-full object-cover"

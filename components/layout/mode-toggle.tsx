@@ -13,6 +13,7 @@ import {
 import { Icons } from "@/components/shared/icons"
 
 export function ModeToggle() {
+  
   const { setTheme } = useTheme()
 
   return (
