@@ -8,7 +8,6 @@ import ContactForm from "../contact-form";
 const Contact = () => {
   
   return (
-
     <section className=" py-8 text-zinc-900">
       <div className="mx-auto max-w-screen-xl px-7">
         <div className="relative h-96 w-full overflow-hidden rounded-xl md:h-72 ">
@@ -22,8 +21,8 @@ const Contact = () => {
                   Discover all the capabilities our platform offers
                 </p>
               </div>
-              <div className="flex w-full min-w-0 flex-1 flex-shrink-0 rounded-lg bg-white/60 p-4">
-                <ContactForm/>
+              <div className="flex w-[calc(50%-100px)] rounded-lg bg-white/60 p-4">
+                <ContactForm />
               </div>
             </div>
           </div>
