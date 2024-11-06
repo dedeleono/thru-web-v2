@@ -72,7 +72,7 @@ export async function HeroLanding() {
             <Icons.arrowRight className="size-4" />
           </Link>
           <Link
-            href="https://65m96trlsh0.typeform.com/to/ZsZ6XkxD"
+            href="https://calendly.com/thru-talk/demo"
             target="_blank"
             rel="noreferrer"
             className={cn(
