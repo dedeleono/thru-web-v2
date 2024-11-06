@@ -9,11 +9,13 @@ import { Testimonials } from "@/components/sections/testimonials";
 import Pricing from "@/components/sections/pricing";
 import Contact from "@/components/sections/contact";
 import { SetDirection } from "@/components/sections/set-direction";
+import { Suspense } from "react";
 
 export default async function IndexPage() {
   return (
     <>
       <HeroLanding />
+
       <PreviewLanding />
       <Powered />
       <BentoGrid />
@@ -22,8 +24,8 @@ export default async function IndexPage() {
       <Features />
       <Testimonials /> */}
       <SetDirection />
-      <Pricing/>
-      <Contact/>
+      <Pricing />
+      <Contact />
     </>
   );
 }

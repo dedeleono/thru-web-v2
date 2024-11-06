@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const technos = [
   {
@@ -83,6 +84,8 @@ const technos = [
 ];
 
 export function Powered() {
+  const t = useTranslations("common");
+
   return (
     <section className="py-14 text-muted-foreground">
       <div className="container max-w-7xl">

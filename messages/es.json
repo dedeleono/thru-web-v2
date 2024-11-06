@@ -1,0 +1,105 @@
+{
+  "Hero": {
+    "x": "Encuéntranos en",
+    "title": {
+      "main": "Crea Experiencias",
+      "gradient": "Inolvidables"
+    },
+    "description": "Desde conciertos hasta eventos corporativos, nuestro sistema de ID digital asegura un acceso fluido y escalable.",
+    "button": {
+      "pricing": "Ver Precios",
+      "bookDemo": "Agenda una Demo"
+    }
+  },
+  "common": {
+    "language": {
+      "switch": "Cambiar Idioma",
+      "en": "Inglés",
+      "es": "Español"
+    },
+    "powered": "Con tecnología de",
+    "bookDemo": "Agenda una Demo",
+    "lets": "¡Conecta con Nosotros!",
+    "discover": "Descubre todo lo que nuestra plataforma ofrece"
+  },
+  "navbar": {
+    "links": {
+      "whyUs": "¿Por Qué Nosotros?",
+      "products": "Nuestra Plataforma",
+      "pricing": "Precios"
+    },
+    "buttons": {
+      "signUp": "Regístrate"
+    }
+  },
+  "Bento": {
+    "sec1": {
+      "title": "Seguro por Diseño",
+      "description": "Los activos están protegidos como registros digitales inmutables, imposibles de duplicar o robar."
+    },
+    "sec2": {
+      "title": "100%",
+      "description": "Confiable"
+    },
+    "sec3": {
+      "title": "Gestión Sencilla",
+      "description": "Simplifica tus operaciones con una plataforma intuitiva para todas tus necesidades de acceso."
+    },
+    "sec4": {
+      "title": "Totalmente Personalizable",
+      "description": "Ajusta cada detalle a tu marca y audiencia con nuestra solución de marca blanca."
+    }
+  },
+  "Business": {
+    "title": "Tu Evento, Nuestra Tecnología",
+    "description": "Comprendemos las demandas digitales de los eventos modernos. Nuestra plataforma asegura un acceso protegido mientras tú te enfocas en brindar experiencias excepcionales.",
+    "specs": {
+      "spec1": {
+        "title": "Versátil",
+        "description": "Se adapta fácilmente a cualquier entorno controlado, desde grandes festivales hasta espacios privados."
+      },
+      "spec2": {
+        "title": "Seguridad Inquebrantable",
+        "description": "Protege datos y credenciales con seguridad basada en blockchain."
+      },
+      "spec3": {
+        "title": "Información Accionable",
+        "description": "Obtén visibilidad sobre el comportamiento y la interacción de tus usuarios en cada punto de contacto."
+      }
+    }
+  },
+  "Product": {
+    "catchphrase": "Transforma Experiencias",
+    "title": "Diseñado para Todas tus Necesidades de Acceso",
+    "description": "Crea experiencias únicas y personalizadas que resuenen con tu audiencia.",
+    "features": {
+      "feature1": {
+        "title": "Control de Acceso en Tiempo Real",
+        "description": "Supervisa y gestiona puntos de acceso con actualizaciones e información en vivo."
+      },
+      "feature2": {
+        "title": "Soluciones de Identidad Digital",
+        "description": "Emite IDs digitales seguros y verificables para cualquier escenario de acceso, respaldados por blockchain."
+      },
+      "feature3": {
+        "title": "Seguridad de Nivel Empresarial",
+        "description": "Nuestra plataforma es compatible con todos los entornos, protegida con encriptación y tecnología blockchain."
+      }
+    }
+  },
+  "Pricing": {
+    "title": "Precios Transparentes y Justos",
+    "description": "Nuestros precios son claros y flexibles. Sin tarifas ocultas ni sorpresas.",
+    "included": {
+      "title": "¿Qué Incluye?",
+      "feature1": "Creación y gestión de IDs digitales",
+      "feature2": "Seguimiento de acceso en tiempo real",
+      "feature3": "Reglas de acceso personalizables",
+      "feature4": "Hasta 5 puntos de acceso únicos",
+      "feature5": "Análisis y reportes detallados",
+      "feature6": "Soporte 24/7"
+    },
+    "each": "Se aplica una pequeña tarifa nominal por cada ID emitido*",
+    "button": "Comienza Ahora"
+  }
+}

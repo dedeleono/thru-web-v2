@@ -1,0 +1,105 @@
+{
+  "Hero": {
+    "x": "Find us on",
+    "title": {
+      "main": "Deliver Unforgettable",
+      "gradient": "Experiences"
+    },
+    "description": "From concerts to corporate events, our secure digital ID system enables seamless, scalable access management.",
+    "button": {
+      "pricing": "Explore Pricing",
+      "bookDemo": "Schedule a Demo"
+    }
+  },
+  "common": {
+    "language": {
+      "switch": "Switch Language",
+      "en": "English",
+      "es": "Español"
+    },
+    "powered": "Powered by",
+    "bookDemo": "Schedule a Demo",
+    "lets": "Connect With Us!",
+    "discover": "Discover all that our platform offers"
+  },
+  "navbar": {
+    "links": {
+      "whyUs": "Why Choose Us?",
+      "products": "Our Platform",
+      "pricing": "Pricing"
+    },
+    "buttons": {
+      "signUp": "Sign Up"
+    }
+  },
+  "Bento": {
+    "sec1": {
+      "title": "Secure by Design",
+      "description": "Assets are safeguarded as immutable digital records, preventing duplication or theft."
+    },
+    "sec2": {
+      "title": "100%",
+      "description": "Reliable"
+    },
+    "sec3": {
+      "title": "Effortless Management",
+      "description": "Simplify operations with a single, intuitive platform for all access needs."
+    },
+    "sec4": {
+      "title": "Fully Customizable",
+      "description": "Tailor every detail to your brand and audience with our white-label solution."
+    }
+  },
+  "Business": {
+    "title": "Your Event, Our Technology",
+    "description": "We understand the digital demands of modern events. Our platform secures access while you focus on delivering exceptional experiences.",
+    "specs": {
+      "spec1": {
+        "title": "Versatile",
+        "description": "Easily adapt to any access-controlled setting, from large festivals to private venues."
+      },
+      "spec2": {
+        "title": "Uncompromising Security",
+        "description": "Protect your data and credentials with blockchain-backed security."
+      },
+      "spec3": {
+        "title": "Actionable Insights",
+        "description": "Gain visibility into user behavior and engagement at every touchpoint."
+      }
+    }
+  },
+  "Product": {
+    "catchphrase": "Transform User Experiences",
+    "title": "Built for All Your Access Needs",
+    "description": "Create unique, branded experiences that resonate with your audience.",
+    "features": {
+      "feature1": {
+        "title": "Real-Time Access Control",
+        "description": "Instantly monitor and manage access points with live updates and insights."
+      },
+      "feature2": {
+        "title": "Digital Identity Solutions",
+        "description": "Issue secure, verifiable digital IDs for any access scenario, powered by blockchain."
+      },
+      "feature3": {
+        "title": "Enterprise-Grade Security",
+        "description": "Our platform supports all environments, secured with encryption and blockchain."
+      }
+    }
+  },
+  "Pricing": {
+    "title": "Transparent, Fair Pricing",
+    "description": "Our pricing is clear and designed for flexibility. No hidden fees or surprises.",
+    "included": {
+      "title": "What’s Included",
+      "feature1": "Digital ID creation and management",
+      "feature2": "Real-time access tracking",
+      "feature3": "Customizable access rules",
+      "feature4": "Up to 5 unique access points",
+      "feature5": "Comprehensive analytics and reporting",
+      "feature6": "24/7 Support"
+    },
+    "each": "A small, nominal fee applies per ID issued*",
+    "button": "Get Started"
+  }
+}

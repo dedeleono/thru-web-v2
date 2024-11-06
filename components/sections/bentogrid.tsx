@@ -6,8 +6,10 @@ import whiteLabel from "../../public/images/storefront.png";
 import qr from '../../public/images/qr.svg';
 import pos from '../../public/images/pos.svg';
 import m from '../../public/images/manage.svg';
+import { useTranslations } from "next-intl";
 
 export function BentoGrid() {
+  const t = useTranslations("Bento");
   return (
     <section>
       <div className="py-32">
@@ -72,11 +74,10 @@ export function BentoGrid() {
                   </div>
                   <div className="relative z-10 mt-8 space-y-1.5 text-center">
                     <h2 className="text-lg font-medium text-foreground">
-                      Secure by default
+                      {t("sec1.title")}
                     </h2>
                     <p className="text-muted-foreground">
-                      Assets become immutable digital assets, impossible to
-                      duplicate or steal.
+                      {t("sec1.description")}
                     </p>
                   </div>
                 </div>
@@ -98,11 +99,11 @@ export function BentoGrid() {
                       />
                     </svg>
                     <span className="text-gradient_indigo-purple mx-auto block w-fit font-heading text-5xl">
-                      100%
+                      {t("sec2.title")} 
                     </span>
                   </div>
                   <h2 className="mt-6 text-center font-heading text-3xl md:text-4xl lg:text-[40px]">
-                    Reliable
+                    {t("sec2.description")}
                   </h2>
                 </div>
               </div>
@@ -136,12 +137,10 @@ export function BentoGrid() {
                     </div>
                     <div className="space-y-2">
                       <h2 className="text-lg font-medium text-foreground">
-                        Stream-line your operations
+                        {t("sec3.title")}
                       </h2>
                       <p className="text-muted-foreground">
-                        Say goodbye to scattered information and embrace the
-                        convenience of having complete control over your
-                        ticketing operations.
+                        {t("sec3.description")}
                       </p>
                     </div>
                   </div>
@@ -317,10 +316,10 @@ export function BentoGrid() {
                     </div>
                     <div className="space-y-2">
                       <h2 className="text-lg font-medium text-foreground">
-                        White Label
+                        {t("sec4.title")}
                       </h2>
                       <p className="text-muted-foreground">
-                        Use our platform to create your own branded platform and manage your own assets.
+                        {t("sec4.description")}
                       </p>
                     </div>
                   </div>

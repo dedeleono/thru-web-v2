@@ -1,37 +1,46 @@
-// "use client";
+"use client";
 
-// import * as React from "react";
-// import { useTranslation } from "react-i18next";
-// import {
-//   DropdownMenu,
-//   DropdownMenuContent,
-//   DropdownMenuItem,
-//   DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu";
-// import { Button } from "@/components/ui/button";
-// import { Icons } from "@/components/shared/icons";
+import * as React from "react";
+import { useTranslations } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/shared/icons";
 
-// export function LanguageSwitcher() {
-//   const { t, i18n } = useTranslation();
+export function LanguageSwitcher() {
+  const t = useTranslations("common");
+  const router = useRouter();
+  const pathname = usePathname();
 
-//   return (
-//     <DropdownMenu>
-//       <DropdownMenuTrigger asChild>
-//         <Button variant="ghost" size="sm" className="size-8 px-0">
-//           <Icons.languages className="size-4" />
-//           <span className="sr-only">{t("common.language.switch")}</span>
-//         </Button>
-//       </DropdownMenuTrigger>
-//       <DropdownMenuContent align="end">
-//         <DropdownMenuItem onClick={() => i18n.changeLanguage("en")}>
-//           <span className="mr-2">🇺🇸</span>
-//           <span>{t("common.language.en")}</span>
-//         </DropdownMenuItem>
-//         <DropdownMenuItem onClick={() => i18n.changeLanguage("es")}>
-//           <span className="mr-2">🇪🇸</span>
-//           <span>{t("common.language.es")}</span>
-//         </DropdownMenuItem>
-//       </DropdownMenuContent>
-//     </DropdownMenu>
-//   );
-// }
+  const handleLanguageChange = (locale: string) => {
+    // Remove the current locale from the pathname if it exists
+    const newPathname = pathname.replace(/^\/[a-z]{2}/, "");
+    router.replace(`/${locale}${newPathname}`, { scroll: false });
+  };
+
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="sm" className="size-8 px-0">
+          <Icons.languages className="size-4" />
+          <span className="sr-only">{t("language.switch")}</span>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end">
+        <DropdownMenuItem onClick={() => handleLanguageChange("en")}>
+          <span className="mr-2">🇺🇸</span>
+          <span>{t("language.en")}</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => handleLanguageChange("es")}>
+          <span className="mr-2">🇬🇹</span>
+          <span>{t("language.es")}</span>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}

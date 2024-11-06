@@ -3,12 +3,15 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { Icons } from "@/components/icons"
+import { useTranslations } from "next-intl"
 
 export const metadata = {
   title: "Pricing",
 }
 
 export default function PricingPage() {
+  const t = useTranslations("Pricing");
+
   return (
     <section
       id="pricing"
@@ -16,37 +19,35 @@ export default function PricingPage() {
     >
       <div className="mx-auto flex w-full flex-col gap-4 ">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Simple, transparent pricing
+          {t("title")}
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          Unlock all features ton handle your operations and events.
+          {t("description")}
         </p>
       </div>
       <div className="grid w-full items-start gap-10 rounded-lg border p-10 md:grid-cols-[1fr_200px]">
         <div className="grid gap-6">
           <h3 className="text-xl font-bold sm:text-2xl">
-            What&apos;s included with our platform
+            {t("included.title")}
           </h3>
           <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Digital ID creation and
-              management
+              <Icons.check className="mr-2 h-4 w-4" /> {t("included.feature1")}
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Up to 5 access points
+              <Icons.check className="mr-2 h-4 w-4" /> {t("included.feature2")}
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Real-time access tracking
+              <Icons.check className="mr-2 h-4 w-4" /> {t("included.feature3")}
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Basic analytics dashboard
+              <Icons.check className="mr-2 h-4 w-4" /> {t("included.feature4")}
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Custom access rules
-              configuration
+              <Icons.check className="mr-2 h-4 w-4" /> {t("included.feature5")}
             </li>
             <li className="flex items-center">
-              <Icons.check className="mr-2 h-4 w-4" /> Standard support
+              <Icons.check className="mr-2 h-4 w-4" /> {t("included.feature6")}
             </li>
           </ul>
         </div>
@@ -54,11 +55,11 @@ export default function PricingPage() {
           <div>
             <h4 className="text-7xl font-bold">$</h4>
             <p className="text-sm font-medium text-muted-foreground">
-              Each ticket emitted will incur a nominal fee*
+              {t("each")}
             </p>
           </div>
           <Link href="/login" className={cn(buttonVariants({ size: "lg" }))}>
-            Get Started
+            {t("button")}
           </Link>
         </div>
       </div>

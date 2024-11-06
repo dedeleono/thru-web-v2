@@ -13,7 +13,9 @@ import { Icons } from "../shared/icons";
 import { MainNav } from "./main-nav";
 import { UserAccountNav } from "./user-account-nav";
 import { Badge } from "@/components/ui/badge"
+import { LanguageSwitcher } from "./language-switcher";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 interface NavBarProps {
   user: Pick<User, "name" | "image" | "email"> | undefined;
@@ -32,6 +34,22 @@ export function NavBar({
 }: NavBarProps) {
   const scrolled = useScroll(50);
   const router = useRouter();
+  const t = useTranslations("navbar");
+
+  const itemss: MainNavItem[] = [
+    {
+      title: t("links.whyUs"),
+      href: "about",
+    },
+    {
+      title: t("links.products"),
+      href: "products",
+    },
+    {
+      title: t("links.pricing"),
+      href: "pricing",
+    },
+  ];
 
   return (
     <header
@@ -40,10 +58,11 @@ export function NavBar({
       }`}
     >
       <div className="container flex h-[60px] items-center justify-between py-4">
-        <MainNav items={items}>{children}</MainNav>
+        <MainNav items={itemss}>{children}</MainNav>
 
         <div className="flex items-center space-x-3">
           {rightElements}
+          <LanguageSwitcher />
 
           {/* {!user ? (
             <Link
@@ -69,7 +88,7 @@ export function NavBar({
               rounded="full"
               onClick={()=>router.push("https://dashboard.thru-ticket.com")}
             >
-              <span>Sign Up</span>
+              <span>{t("buttons.signUp")}</span>
               <Icons.arrowRight className="size-4" />
             </Button>
           

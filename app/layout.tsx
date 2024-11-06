@@ -8,6 +8,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "next-themes";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -61,27 +63,39 @@ export const metadata = {
   manifest: `${siteConfig.url}/site.webmanifest`,
 };
 
-export default function RootLayout({ children }: RootLayoutProps) {
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: { locale: string };
+}
+
+export default async function RootLayout({ children, params }: RootLayoutProps) {
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={params.locale} suppressHydrationWarning>
       <head />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
           fontUrban.variable,
-          fontHeading.variable
+          fontHeading.variable,
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
-          {children}
-          <Analytics />
-          <Toaster />
-          <ModalProvider />
-          <TailwindIndicator />
-        </ThemeProvider>
+        
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem={false}
+            disableTransitionOnChange
+          >
+            {children}
+            <Analytics />
+            <Toaster />
+            <ModalProvider />
+            <TailwindIndicator />
+          </ThemeProvider>
+        
       </body>
     </html>
-  )
+  );
 }
